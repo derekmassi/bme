@@ -64,7 +64,7 @@ void handle_NotFound(){
 String SendHTML(float temperature,float humidity,float pressure,float altitude){
   String ptr = "<!DOCTYPE html> <html>\n";
   ptr +="<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
-  ptr +="<title>ESP8266 Weather Station</title>\n";
+  ptr +="<title>Dirks ESP8266 Wetterstation</title>\n";
   ptr +="<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}\n";
   ptr +="body{margin-top: 50px;} h1 {color: #444444;margin: 50px auto 30px;}\n";
   ptr +="p {font-size: 24px;color: #444444;margin-bottom: 10px;}\n";
@@ -72,17 +72,17 @@ String SendHTML(float temperature,float humidity,float pressure,float altitude){
   ptr +="</head>\n";
   ptr +="<body>\n";
   ptr +="<div id=\"webpage\">\n";
-  ptr +="<h1>ESP8266 Weather Station</h1>\n";
-  ptr +="<p>Temperature: ";
+  ptr +="<h1>Dirks ESP8266 Wetterstation</h1>\n";
+  ptr +="<p>Temperatur: ";
   ptr +=temperature;
   ptr +="&deg;C</p>";
-  ptr +="<p>Humidity: ";
+  ptr +="<p>Luftfeuchtigkeit: ";
   ptr +=humidity;
   ptr +="%</p>";
-  ptr +="<p>Pressure: ";
+  ptr +="<p>Druck: ";
   ptr +=pressure;
   ptr +="hPa</p>";
-  ptr +="<p>Altitude: ";
+  ptr +="<p>Höhe über NN: ";
   ptr +=altitude;
   ptr +="m</p>";
   ptr +="</div>\n";
